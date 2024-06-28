@@ -5,12 +5,16 @@ using Microsoft.Xna.Framework.Input;
 
 namespace makeitbob;
 
+// Assets used:
+// https://www.kenney.nl/assets/background-elements
+// Shoutout to Kenney for this nice moon texture
+
 public class Game1 : Game
 {
     private GraphicsDeviceManager _graphics;
     private SpriteBatch _spriteBatch;
 
-    // Add variables to store our texture and position
+    // Add variables to store our texture and positions (We'll be drawing them three times)
     private Texture2D _texture;
     private Vector2 _position1;
     private Vector2 _position2;
@@ -37,13 +41,13 @@ public class Game1 : Game
 
         // Set the initial position of the texture relative to the screen size
 
-        // Nudge to the left
+        // Nudge to the left (25% of the screen width)
         _position1 = new Vector2(_graphics.PreferredBackBufferWidth * .25f, _graphics.PreferredBackBufferHeight / 2.0f);
 
-        // Center
+        // Center (50% of the screen width)
         _position2 = new Vector2(_graphics.PreferredBackBufferWidth * .50f, _graphics.PreferredBackBufferHeight / 2.0f);
 
-        // Nudge to the right
+        // Nudge to the right (75% of the screen width)
         _position3 = new Vector2(_graphics.PreferredBackBufferWidth * .75f, _graphics.PreferredBackBufferHeight / 2.0f);
     }
 
