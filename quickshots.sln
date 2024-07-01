@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "makeitbob", "makeitbob\makeitbob.csproj", "{18BD199E-C274-4D35-A1DB-CB748E7E651C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "animation", "animation\animation.csproj", "{DF77DFFD-9F63-4F26-9A12-0317F65DA8E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "origin", "origin\origin.csproj", "{F86DF356-5400-44E4-8780-FD78451BBFB6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{18BD199E-C274-4D35-A1DB-CB748E7E651C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18BD199E-C274-4D35-A1DB-CB748E7E651C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18BD199E-C274-4D35-A1DB-CB748E7E651C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF77DFFD-9F63-4F26-9A12-0317F65DA8E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF77DFFD-9F63-4F26-9A12-0317F65DA8E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF77DFFD-9F63-4F26-9A12-0317F65DA8E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF77DFFD-9F63-4F26-9A12-0317F65DA8E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F86DF356-5400-44E4-8780-FD78451BBFB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F86DF356-5400-44E4-8780-FD78451BBFB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F86DF356-5400-44E4-8780-FD78451BBFB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F86DF356-5400-44E4-8780-FD78451BBFB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

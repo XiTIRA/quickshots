@@ -1,3 +1,2 @@
-﻿
-using var game = new makeitbob.Game1();
+﻿using var game = new makeitbob.MakeItBobGame();
 game.Run();
