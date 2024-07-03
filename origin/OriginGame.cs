@@ -92,7 +92,8 @@ public class OriginGame : Game
         _spriteBatch.DrawString(_font, $"Origin: {_origin}", new Vector2(10,10), Color.White);
         _spriteBatch.DrawString(_font, $"Position: {_screenSize/2}", new Vector2(10,40), Color.White);
         _spriteBatch.DrawString(_font, $"Start Draw From: {_originType}", new Vector2(10,70), Color.White);
-        
+        _spriteBatch.DrawString(_font, "Press Space To Change Origin", new Vector2(10,100), Color.White);
+
         _spriteBatch.End();
 
         base.Draw(gameTime);
