@@ -49,7 +49,7 @@ public class ResizeMatrixGame : Game
     {
         _spriteBatch = new SpriteBatch(GraphicsDevice);
 
-        _background = Content.Load<Texture2D>("Background");
+        _background = Content.Load<Texture2D>("background");
     }
 
     protected override void Update(GameTime gameTime)

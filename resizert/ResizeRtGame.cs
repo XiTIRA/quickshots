@@ -46,7 +46,7 @@ public class ResizeRtGame : Game
         _spriteBatch = new SpriteBatch(GraphicsDevice);
         _finalTarget = new RenderTarget2D(GraphicsDevice, (int)_preferredSize.X, (int)_preferredSize.Y);
         CalculateRenderDestination(); // Needs to be called at least once to set the final destination rect
-        _background = Content.Load<Texture2D>("Background");
+        _background = Content.Load<Texture2D>("background");
     }
 
     protected override void Update(GameTime gameTime)
