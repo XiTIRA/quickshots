@@ -120,7 +120,7 @@ public class GameScene : IScene
 
         if (Keyboard.GetState().IsKeyDown(Keys.Space))
         {
-            _sceneManager.AddScene(new ExitScene(_contentManager));
+            _sceneManager.AddScene(new ExitScene(_contentManager, _sceneManager));
         }
     }
 
@@ -132,15 +132,14 @@ public class GameScene : IScene
 
 public class ExitScene : IScene
 {
-
     private ContentManager _contentManager;
-
+    private SceneManager _sceneManager;
     private Texture2D _cactusTexture;
 
-    public ExitScene(ContentManager contentManager)
+    public ExitScene(ContentManager contentManager, SceneManager sceneManager)
     {
         _contentManager = contentManager;
-
+        _sceneManager = sceneManager;
         Load();
     }
 
@@ -151,7 +150,10 @@ public class ExitScene : IScene
 
     public void Update(GameTime gameTime)
     {
-
+        if (Keyboard.GetState().IsKeyDown(Keys.Space))
+        {
+            _sceneManager.AddScene(new GameScene(_contentManager, _sceneManager));
+        }
     }
 
     public void Draw(SpriteBatch spriteBatch, GameTime gameTime)

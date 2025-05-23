@@ -68,7 +68,12 @@ public class ResizeMatrixGame : Game
         GraphicsDevice.Clear(Color.CornflowerBlue);
 
         _spriteBatch.Begin(SpriteSortMode.Deferred, null, SamplerState.PointClamp, null, null, null, _scaleMatrix);
-        _spriteBatch.Draw(_background, Vector2.Zero, Color.White);
+        
+        _spriteBatch.Draw(
+            texture: _background, 
+            position: Vector2.Zero, 
+            color: Color.White);
+        
         _spriteBatch.End();
 
         base.Draw(gameTime);
