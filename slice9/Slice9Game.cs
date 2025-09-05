@@ -42,6 +42,24 @@ public class Slice9Game : Game
             new Vector2(300, 50),
             new Vector2(400, 250));
     }
+    
+    protected void LoadContent2()
+    {
+        _spriteBatch = new SpriteBatch(GraphicsDevice);
+
+        _window1 = new Slice9(
+            Content.Load<Texture2D>("panel"),
+            30,
+            new Vector2(50, 50),
+            new Vector2(200, 350));
+
+        _window2 = new Slice9(
+            Content.Load<Texture2D>("panel"),
+            30,
+            new Vector2(300, 50),
+            new Vector2(400, 250));
+    }
+
 
     protected override void Update(GameTime gameTime)
     {
